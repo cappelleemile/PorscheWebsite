@@ -1,0 +1,29 @@
+.sectionPart1,
+.sectionPart2 {
+    border-radius: 40px;
+    margin: auto;
+    width: 40%;
+    position: relative;
+    overflow: hidden;
+}
+
+.sectionPart1 {
+    margin-left: 35px;
+    float: left;
+}
+
+.sectionPart2 {
+    margin-right: 35px;
+    float: right;
+}
+
+.sectionPart1 img,
+.sectionPart2 img {
+    transition: transform .5s ease;
+    transform: scale(1.1);
+}
+
+.sectionPart1:hover img,
+.sectionPart2:hover img {
+    transform: scale(1.2);
+}

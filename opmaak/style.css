@@ -3,13 +3,26 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
+    position: relative;
     text-decoration: none;
     color: black;
 }
 
-a:link:hover {
-    text-decoration: underline;
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+nav a:link:hover::after {
+    width: 100%;
 }
 
 nav img {
@@ -42,7 +55,8 @@ header {
     position: relative;
 }
 
-header video, header img {
+header video,
+header img {
     position: absolute;
     top: -370px;
     left: 0;
@@ -71,66 +85,6 @@ article {
 section {
     width: 80%;
     margin: auto;
-}
-
-.sectionPart1, .sectionPart2 {
-    border-radius: 40px;
-    margin: auto;
-    width: 650px;
-    float: left;
-    position: relative;
-    overflow: hidden;
-}
-
-.sectionPart1 {
-    margin-left: 35px;
-}
-
-.sectionPart2 {
-    margin-left: 110px;
-}
-
-.sectionPart1 img, .sectionPart2 img {
-    transition: transform .5s ease;
-    transform: scale(1.1);
-}
-
-.sectionPart1:hover img, .sectionPart2:hover img {
-    transform: scale(1.2);
-}
-
-.sectionPart1MOD, .sectionPart2MOD, .sectionPart3MOD, .sectionPart4MOD, .sectionPart5MOD, .sectionPart6MOD {
-    border-radius: 40px;
-    margin: auto;
-    width: 400px;
-    height: 500px;
-    float: left;
-    position: relative;
-    overflow: hidden;
-}
-
-.sectionPart1MOD, .sectionPart4MOD {
-    margin-left: 35px;
-}
-
-.sectionPart2MOD, .sectionPart3MOD {
-    margin-left: 110px;
-}
-
-.sectionPart4MOD {
-    clear: both;
-}
-
-.sectionPart1MOD img, .sectionPart2MOD img, .sectionPart3MOD img, .sectionPart4MOD img, .sectionPart5MOD img, .sectionPart6MOD img {
-    transition: transform .5s ease;
-    transform: scale(1.1);
-    position: absolute;
-    top: -100px;
-    left: -100px;
-}
-
-.sectionPart1MOD:hover img, .sectionPart2MOD:hover img, .sectionPart3MOD:hover img, .sectionPart4MOD:hover img, .sectionPart5MOD:hover img, .sectionPart6MOD:hover img {
-    transform: scale(1.2);
 }
 
 #sectionLeftText {
@@ -167,6 +121,10 @@ footer li {
     margin-bottom: 10px;
 }
 
+footer a {
+    padding: 5px;
+}
+
 footer a:link:hover {
     text-decoration: none;
     border-radius: 100px;
@@ -177,6 +135,7 @@ footer a:link:hover {
 .footerContainer {
     width: 80%;
     margin: auto;
+    margin-top: 15px;
 }
 
 .footerField {
@@ -201,6 +160,6 @@ footer a:link:hover {
 .footerLogo {
     float: right;
     position: relative;
-    bottom: 8.5em;
+    bottom: 9em;
     right: 6em;
 }

@@ -1,0 +1,69 @@
+section {
+    width: 80%;
+}
+
+.sectionPart1,
+.sectionPart2,
+.sectionPart3,
+.sectionPart4,
+.sectionPart5,
+.sectionPart6 {
+    border-radius: 40px;
+    width: 350px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.sectionPart1 img,
+.sectionPart2 img,
+.sectionPart3 img,
+.sectionPart4 img,
+.sectionPart5 img,
+.sectionPart6 img {
+    width: 350px;
+    transition: transform .5s ease;
+    transform: scale(1.1);
+}
+
+.sectionPart1:hover img,
+.sectionPart2:hover img,
+.sectionPart3:hover img,
+.sectionPart4:hover img,
+.sectionPart5:hover img,
+.sectionPart6:hover img {
+    transform: scale(1.2);
+}
+
+.sectionPart1 {
+    float: left;
+}
+
+.sectionPart2 {
+    float: left;
+    margin-left: 5%;
+}
+
+.sectionPart3 {
+    float: left;
+    margin-left: 5%;
+}
+
+.sectionPart4 {
+    margin-top: 5%;
+    clear: both;
+    float: left;
+}
+
+.sectionPart5 {
+    float: left;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.sectionPart6 {
+    float: left;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
