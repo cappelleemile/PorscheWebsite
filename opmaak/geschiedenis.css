@@ -1,0 +1,42 @@
+article {
+    font-size: 1.2em;
+}
+
+article b {
+    font-weight: 500;
+    color: rgb(76, 76, 76);
+}
+
+.articleContainerEen {
+    float: left;
+    width: 65%;
+}
+
+#articleEenFoto {
+    float: right;
+    width: 500px;
+    height: 560px;
+    border-radius: 40px;
+    transform: scale(1.1);
+    position: relative;
+    overflow: hidden;
+    margin-top: 2.5em;
+}
+
+#articleTweeFoto {
+    float: left;
+    width: 500px;
+    border-radius: 40px;
+    transform: scale(1.1);
+    margin-top: 2em;
+    margin-left: 1em;
+}
+
+#articleContainerTwee {
+    float: right;
+    width: 65%;
+}
+
+#clearBoth {
+    clear: both;
+}
