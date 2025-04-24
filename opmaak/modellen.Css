@@ -1,3 +1,8 @@
+header video,
+header img {
+    top: -450px;
+}
+
 section {
     margin-left: 20%;
     width: 1200px;

@@ -1,3 +1,8 @@
+header video,
+header img {
+    top: -370px;
+}
+
 .sectionPart1,
 .sectionPart2 {
     border-radius: 40px;

@@ -58,7 +58,6 @@ header {
 header video,
 header img {
     position: absolute;
-    top: -370px;
     left: 0;
     width: 100%;
     height: auto;

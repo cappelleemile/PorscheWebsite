@@ -1,0 +1,290 @@
+body {
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a:link,
+a:visited {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+nav a:link:hover::after {
+    width: 100%;
+}
+
+nav img {
+    height: 15px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    margin-right: 20px;
+}
+
+nav li {
+    float: left;
+    margin-right: 25px;
+}
+
+#navSelected {
+    font-weight: 500;
+}
+
+header {
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+header img {
+    width: 100%;
+}
+
+article {
+    clear: both;
+    width: 80%;
+    margin: 50px auto;
+    margin-top: 250px;
+}
+
+#headerSectionSpace {
+    margin-top: 100px;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 7vh;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+section h4 {
+    font-weight: 400;
+    background-color: rgb(228, 225, 225);
+    padding: 10px 20px;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+section p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+section h5 {
+    font-weight: 400;
+    color: rgb(110, 110, 110);
+}
+
+article img {
+    float: right;
+    margin-top: 100px;
+}
+
+article {
+    font-size: 2.5em;
+    font-weight: 350;
+}
+
+article p {
+    font-size: 0.4em;
+    font-weight: 500;
+    margin-top: 150px;
+}
+
+#articleBig {
+    font-size: 2.5em;
+}
+
+#articleMedium {
+    font-size: 1.5em;
+}
+
+.articleFotos {
+    text-align: center;
+}
+
+#info {
+    font-size: 0.5em;
+    color: rgb(110, 110, 110);
+    font-weight: 400;
+}
+
+footer {
+    clear: both;
+    border-top: 2px solid rgb(182, 182, 182);
+    margin-top: 100px;
+    background-color: rgb(211, 211, 211);
+}
+
+footer ul {
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    padding: 5px;
+}
+
+footer a:link:hover {
+    text-decoration: none;
+    border-radius: 100px;
+    background-color: rgb(240, 255, 255, 0.3);
+
+}
+
+.footerContainer {
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.footerField {
+    float: left;
+    margin-right: 100px;
+}
+
+#footerSM li {
+    float: left;
+    margin-right: 15px;
+}
+
+#footerCopy {
+    padding-top: 200px;
+    padding-bottom: 10px;
+}
+
+.footerLogo img {
+    width: 250px;
+}
+
+.footerLogo {
+    float: right;
+    position: relative;
+    bottom: 9em;
+    right: 6em;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container img {
+    border-radius: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: darkred;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: darkred;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
