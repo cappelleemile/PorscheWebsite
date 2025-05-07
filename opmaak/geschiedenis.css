@@ -1,6 +1,6 @@
 header video,
 header img {
-    top: -320px;
+    top: -60%;
 }
 
 article {
@@ -19,7 +19,7 @@ article b {
 
 #articleEenFoto {
     float: right;
-    width: 500px;
+    width: 30%;
     height: 600px;
     border-radius: 40px;
     transform: scale(1.1);
@@ -31,7 +31,7 @@ article b {
 
 #articleTweeFoto {
     float: left;
-    width: 500px;
+    width: 30%;
     height: 540PX;
     border-radius: 40px;
     transform: scale(1.1);
