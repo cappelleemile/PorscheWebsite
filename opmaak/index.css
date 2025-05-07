@@ -7,18 +7,18 @@ header img {
 .sectionPart2 {
     border-radius: 40px;
     margin: auto;
-    width: 45%;
+    width: 43%;
     position: relative;
     overflow: hidden;
 }
 
 .sectionPart1 {
-    margin-left: 2%;
+    margin-left: 35px;
     float: left;
 }
 
 .sectionPart2 {
-    margin-right: 2%;
+    margin-right: 35px;
     float: right;
 }
 
